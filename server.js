@@ -15,10 +15,10 @@ app.get('/index', function (req, res){
 
 });
 
-app.get('/Login', function(req, res){
+app.get('/login', function (req, res){
 
 res.sendFile(__dirname + '/Index/Login.html');
 
 });
 
-app.listen(process.env.Port || 3000);
+app.listen(process.env.PORT || 3000);
