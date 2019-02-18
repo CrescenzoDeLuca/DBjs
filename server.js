@@ -15,4 +15,10 @@ app.get('/index', function (req, res){
 
 });
 
+app.get('/Login', function(req, res){
+
+res.sendFile(__dirname + '/Index/Login.html');
+
+});
+
 app.listen(process.env.Port || 3000);
